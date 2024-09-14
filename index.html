@@ -7,13 +7,14 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu_fijo">
     <div class="container">
-      <a class="navbar-brand" href="#">Farmacia Salud</a>
+      <a class="navbar-brand" href="#">FarmaNova</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,10 +24,13 @@
             <a class="nav-link active" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Servicios</a>
+            <a class="nav-link active" href="#services">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacto</a>
+            <a class="nav-link active" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -35,9 +39,11 @@
 
   <!-- Hero Section -->
   <div class="container-fluid bg-primary text-white text-center py-5">
+    
     <div class="container">
-      <h1>Bienvenidos a Farmacia Salud</h1>
-      <p>Tu salud es nuestra prioridad. Medicamentos y productos de salud a tu alcance.</p>
+      <img id="logo_farmanova" src="logo.jpeg" alt="logo Farmanova">
+      <h1>Bienvenidos a FarmaNova</h1>
+      <p>Calidad humana a su servicio.</p>
       <a href="#services" class="btn btn-light mt-3">Ver Servicios</a>
     </div>
   </div>
@@ -48,7 +54,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card text-center">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Medicamentos">
+          <img src="Medicamentos.jpeg" class="card-img-top" alt="Medicamentos">
           <div class="card-body">
             <h5 class="card-title">Medicamentos</h5>
             <p class="card-text">Amplia gama de medicamentos de calidad a precios accesibles.</p>
@@ -57,16 +63,16 @@
       </div>
       <div class="col-md-4">
         <div class="card text-center">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Asesoría">
+          <img src="Toma de presión.jpeg" class="card-img-top" alt="Asesoría">
           <div class="card-body">
-            <h5 class="card-title">Asesoría Profesional</h5>
-            <p class="card-text">Nuestro equipo farmacéutico te ofrece asesoría personalizada.</p>
+            <h5 class="card-title">Toma de presión arterial.</h5>
+            <p class="card-text">Nuestro equipo farmacéutico te ofrece atención profesional.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card text-center">
-          <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Entrega a Domicilio">
+          <img src="Domicilio.jpeg" class="card-img-top" alt="Entrega a Domicilio">
           <div class="card-body">
             <h5 class="card-title">Entrega a Domicilio</h5>
             <p class="card-text">Recibe tus medicamentos sin salir de casa, con nuestro servicio de entrega rápida.</p>
@@ -75,10 +81,78 @@
       </div>
     </div>
   </div>
+  
+  <!-- Testimonios -->
+   <h2 class="text-center mb-4" id="testimonios">Testimonios</h2>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner contenedor_carrusel">
+      <div class="carousel-item active">
+        <div class="imagen_carrusel">
+          <img src="Cliente1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Dave González</h5>
+        <p>¡Excelente servicio!.</p>
+        <img src="estrella.png" alt="" class="star">
+        <img src="estrella.png" alt="" class="star">
+        <img src="estrella.png" alt="" class="star">
+        <img src="estrella.png" alt="" class="star">
+        <img src="estrella.png" alt="" class="star">
+      </div>
+        </div>
+        <div class="carousel-item">
+          <div class="imagen_carrusel">
+            <img src="Cliente2.png" class="d-block w-100" alt="...">
+          </div>
+          
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nancy Perdomo</h5>
+            <p>Muy buena atención y precios económicos.</p>
+            <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="imagen_carrusel">
+            <img src="Cliente3.png" class="d-block w-100" alt="...">
+          </div>
+          
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Daniel Díaz</h5>
+            <div>
+              <p class="texto_tesmimonio">Muy profesionales.</p>
+              <p class="texto_testimonio">Domicilios puntuales.</p>
+              <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+            <img src="estrella.png" alt="" class="star">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
 
   <!-- Contact Section -->
   <div id="contact" class="container-fluid bg-light py-5">
-    <div class="container">
+    <div class="container contenedor_contacto">
       <h2 class="text-center mb-4">Contacto</h2>
       <div class="row">
         <div class="col-md-6">
@@ -100,11 +174,11 @@
         </div>
         <div class="col-md-6">
           <h5>Dirección:</h5>
-          <p>123 Calle Principal, Ciudad, País</p>
+          <p>Carrera 24 # 58-62, Palmira, Valle del Cauca</p>
           <h5>Teléfono:</h5>
-          <p>(+123) 456-7890</p>
+          <p>322-496-7151</p>
           <h5>Correo Electrónico:</h5>
-          <p>contacto@farmaciasalud.com</p>
+          <p>farmanova01@gmail.com</p>
         </div>
       </div>
     </div>
@@ -112,7 +186,7 @@
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Farmacia Salud. Todos los derechos reservados.</p>
+    <p>&copy; 2024 FarmaNova. Todos los derechos reservados.</p>
   </footer>
 
   <!-- Bootstrap JS -->
